@@ -1,161 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Gizachew Tilahun | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body { font-size: 13px; line-height: 1.6; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Professional portfolio of Gizachew Tilahun Feleke, IT Support Expert.">
+<title>Gizachew Tilahun Feleke | IT Portfolio</title>
+<style>
+:root{--navy:#0b1530;--panel:#111f40;--teal:#45d6c5;--text:#edf3ff;--muted:#b7c3dc;--line:#263657}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#081126;color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
+header{position:sticky;top:0;background:rgba(8,17,38,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:5}
+nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:17px 0}.brand{font-weight:800;letter-spacing:.2px}.brand span{color:var(--teal)}.links{display:flex;gap:20px;flex-wrap:wrap;font-size:.92rem;color:var(--muted)}.links a:hover{color:var(--teal)}
+.hero{padding:78px 0 64px;display:grid;grid-template-columns:1.4fr .8fr;gap:48px;align-items:center}.eyebrow{color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+h1{font-size:clamp(2.3rem,5vw,4.2rem);line-height:1.08;letter-spacing:-1.5px;margin:15px 0 18px}.lead{color:var(--muted);font-size:1.08rem;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:11px 17px;border-radius:10px;font-weight:700;border:1px solid var(--teal)}.primary{background:var(--teal);color:#061427}.secondary{color:var(--text)}.note{font-size:.82rem;color:var(--muted);margin-top:12px}
+.visual{border:1px solid #294163;border-radius:24px;background:radial-gradient(circle at 70% 15%,#174e68 0,#142445 35%,#101a34 75%);padding:26px;min-height:300px;display:grid;place-items:center;position:relative;overflow:hidden}.orbit{width:210px;height:210px;border:1px solid #3a7184;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #31566f;border-radius:50%;inset:25px}.orbit:after{inset:55px}.core{background:var(--teal);color:#07152a;border-radius:20px;padding:20px;font-weight:900;font-size:1.5rem;box-shadow:0 0 35px #45d6c555}.node{position:absolute;background:#16294b;border:1px solid #4c8394;border-radius:10px;padding:8px 10px;font-size:.8rem}.n1{top:14px;left:5px}.n2{right:-5px;top:62px}.n3{bottom:18px;left:15px}
+section{padding:50px 0}h2{font-size:1.8rem;margin:0 0 9px;letter-spacing:-.5px}.section-intro{color:var(--muted);margin:0 0 25px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{margin:0 0 8px;font-size:1.05rem}.card p,.card li{color:var(--muted);font-size:.94rem}.tag{display:inline-block;border:1px solid #31506a;border-radius:999px;padding:5px 10px;margin:5px 5px 0 0;color:#d7e9f6;font-size:.83rem}
+.timeline{border-left:2px solid #2b5268;padding-left:22px;display:grid;gap:18px}.job{position:relative}.job:before{content:"";position:absolute;width:10px;height:10px;background:var(--teal);border-radius:50%;left:-28px;top:8px}.job h3{margin:0}.meta{color:var(--teal);font-size:.88rem;font-weight:700}.job p{color:var(--muted);margin:7px 0}
+.contact{background:linear-gradient(120deg,#112347,#0d1b34);border:1px solid var(--line);border-radius:20px;padding:30px}.contact p{color:var(--muted)}footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.86rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:50px}.visual{min-height:250px}.grid{grid-template-columns:1fr}.links{gap:10px}.brand{font-size:.9rem}nav{align-items:flex-start;flex-direction:column}}
+</style>
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav class="navbar">
-    <h1>Gizachew Portfolio</h1>
-    <ul>
-      <li><a href="#about" class="nav-link active">About Me</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#Projects" class="nav-link">Projects</a></li>
-      <li><a href="#cv" class="nav-link">CV</a></li>
-      <li><a href="#udacity-certificate" class="nav-link">Udacity Certificate</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-left">
-      <h1>I am Gizachew Tilahun</h1>
-      <h3>
-        Graduated with a <strong>Bachelor of Science in Electrical and Computer Engineering</strong> from Assosa University   
-        (January 15, 2021 G.C).
-      </h3>
-    </div>
-
-    <div class="hero-right">
-      <div class="profile-wrapper">
-        <img src="photo.png" alt="Gizachew Tilahun" class="profile-pic" />
-        <div class="profile-info">
-          <h2>BSc in Electrical and Computer Engineering</h2>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="slide-container">
-    
-    <!-- About -->
-    <section id="about" class="fade-section slide active">
-      <h2>About Me</h2>
-      <div class="content-wrapper">
-        <p>
-          I am a dedicated and versatile professional with 
-          <strong>a B.Sc. in Electrical and Computer Engineering with CGPA (3.59). </strong> 
-          I bring proven experience in <strong>Telecommunications, IT support, Banking, Database management, and client services.</strong>
-        Over the years, I have developed strong technical and analytical expertise, along with the ability to deliver reliable results under pressure.</strong> 
-        </p>
-        <p>
-          My academic journey has equipped me with advanced skills in decision-making, projects 
-          management, and research methodology. I have hands-on experience in conducting data-driven 
-          studies, preparing reports, and supporting organizational growth through effective strategies.
-        </p>
-        <p>
-          I am passionate about applying my knowledge to solve business challenges, improve efficiency, 
-          and contribute to organizational success.
-        </p>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="fade-section slide">
-      <h2>Skills</h2>
-      <div class="content-wrapper">
-        <ul>
-          <li><strong>Programming:</strong> C++, Java, Python, HTML, MATLAB, PHP..</li>
-          <li><strong>Telecommunications & Networking:</strong>  Fiber optics, broadband setup,PSTN equipment.</li>
-          <li><strong>Backend & Database:</strong> SQL, MySQL, Node.js, PHP, Relational Database Design, Data Modeling.</li>
-          <li><strong>Embedded Systems:</strong> Arduino, MATLAB/Simulink, Microcontrollers, System Simulation.</li>
-          <li><strong>Maintenance & Troubleshooting:</strong> Computer Hardware/Software Installation, Diagnostics, and Repair.</li>
-          <li><strong>Digital Literacy:</strong> Microsoft Office Suite (Word, Excel, PowerPoint).</li>
-          <li><strong>Soft Skills:</strong> Critical Thinking, Team Collaboration, Communication, Continuous Learning.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="fade-section slide">
-      <h2>Experience</h2>
-      <div class="content-wrapper">
-        <div class="experience-item">
-          <li><h3>Ethio-Telecom -Field Operation Technician | Addis Ababa, 2021–2022</h3>
-          <ul>
-            Installed and maintained fiber optics, copper wire, and telecomequipment.
-           Configured broadband (Internet, Data, and Voice).
-           Performed maintenance on Wi-Fi modems and PSTN equipment.
-          Collected and managed network data (MSAG, MSAN, VLAN)
-          </ul>
-        </div>
-
-        <div class="experience-item">
-          <li><b>Nib International Bank</b>-Customer Service Officer | Addis Ababa, 2022–2023
-         <li><b>DAF-Tech Computer Engineering</b>-Database Trainer & IT Officer |Addis Ababa, 2023–2024.</li>
-          <li><b>Wallet Microfinance Institution</b>-KYC Officer | Addis Ababa, 2024–2025.</li>
-          <li><b>Tibeb Design and Building PLC</b>-Database Associate | Addis Ababa,2025–Present.</li>
-          <ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="Projects" class="fade-section slide">
-      <h2>projects</h2>
-      <div class="content-wrapper">
-        <ul>
-          <li><strong>Upgraded Inventory System from Tibeb Design PLC:</strong> Applied statistical methods to support strategic business decisions.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- CV -->
-    <section id="cv" class="fade-section slide center-text">
-      <h2>Curriculum Vitae</h2>
-      <div class="content-wrapper">
-        <a class="btn" href="Gizachew Tilahun CV.pdf" target="_blank">📄 View My Full CV (PDF)</a>
-      </div>
-    </section>
-    <!-- Udacity Certificate -->
-    <section id="udacity-certificate" class="fade-section slide center-text">
-      <h2>Udacity Certificate</h2>
-      <a class="btn" href="All Udacity Certificates.pdf" target="_blank" rel="noopener"><h3>📄View My Udacity Certificate(PDF)</h3></a>
-      <h2>Or Use Link</h2>
-      <p>Programming Fundamentals: <a href="https://www.udacity.com/certificate/e/60acebca-d204-11f0-8c38-7f8a3ca4462e" target="_blank" rel="noopener">https://www.udacity.com/certificate/e/4a4158fa-b326-11f0-800c-473b187c71e8</a></p>
-      <p>AI Fundamentals: <a href="https://www.udacity.com/certificate/e/5f65d0ae-d2dd-11f0-9887-3bb55e1af95b" target="_blank" rel="noopener">https://www.udacity.com/certificate/e/c5ee8d08-d1f6-11f0-8f26-974e34f30cc7</a></p>
-      <p>Android Developer Fundamentals: <a href="https://www.udacity.com/certificate/e/d8bd10e4-d2dc-11f0-8369-1732234449e4" target="_blank" rel="noopener">https://www.udacity.com/certificate/e/9b8003d4-d2a6-11f0-bc81-33969a5bb7f3</a></p>
-      <p>Data Analysis Fundamentals: <a href="https://www.udacity.com/certificate/e/faf0715e-d31f-11f0-bf23-6f90f928b3eb" target="_blank" rel="noopener">https://www.udacity.com/certificate/e/639b8c44-d2d4-11f0-b682-cb30679a0c76</a></p>
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact" class="fade-section slide center-text">
-      <h2>Contact Me</h2>
-      <div class="content-wrapper">
-        <p>Email: <a href="mailto:gizat8066@gmail.com">gizat8066@gmail.com</a></p>
-        <p>Linkedin: <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">www.linked.com/in/gizachew2121/</a></p>
-        <p>GitHub: <a href="https://github.com/gize2121" target="_blank">https://github.com/gize2121</a></p>
-        <p>Phone: <a href="tel:+251927584788">+251 927-584-788</a></p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Gizachew Tilahun. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home">GIZACHEW <span>TF.</span></a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+</nav></div></header>
+<main>
+<div class="wrap hero" id="home">
+<div>
+<div class="eyebrow">IT Support · Systems · Networking</div>
+<h1>Reliable IT support.<br>Secure systems.<br><span style="color:var(--teal)">Better digital services.</span></h1>
+<p class="lead">I'm Gizachew Tilahun Feleke, an IT support and systems professional experienced in end-user support, Windows and hardware troubleshooting, network connectivity, ERP operations, database support, and digital banking services.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn secondary" href="#contact">Contact me</a></div>
+<p class="note">Tip: Add your CV PDF and update the contact details before sharing this portfolio.</p>
+</div>
+<div class="visual" aria-label="Abstract technology illustration"><div class="orbit"><div class="core">IT</div><div class="node n1">Networks</div><div class="node n2">Systems</div><div class="node n3">Data & ERP</div></div></div>
+</div>
+<section id="about"><div class="wrap">
+<h2>About me</h2><p class="section-intro">Practical, service-focused IT support with an interest in reliable infrastructure and digital services.</p>
+<div class="card"><p>I support users and business operations by troubleshooting hardware, software, Windows, printers, and network connectivity; helping maintain IT assets; supporting ERP workflows; and assisting with database and digital banking systems. I value clear communication, careful documentation, data integrity, and continuous learning.</p></div>
+</div></section>
+<section id="skills"><div class="wrap">
+<h2>Technical skills</h2><p class="section-intro">Core areas I work with and continue to develop.</p>
+<div class="grid">
+<div class="card"><h3>IT Support & Windows</h3><p>End-user support, PC and printer troubleshooting, OS and application setup, preventive maintenance, inventory and service-desk support.</p></div>
+<div class="card"><h3>Networking & Security</h3><p>LAN/Wi-Fi connectivity, TCP/IP fundamentals, routers and switches, network troubleshooting, endpoint protection and access support.</p></div>
+<div class="card"><h3>ERP, Databases & Digital Services</h3><p>ERP operations support, SQL/database fundamentals, data validation, reporting, backup support and digital banking platform assistance.</p></div>
+</div>
+<div style="margin-top:16px"><span class="tag">Windows</span><span class="tag">ERP Support</span><span class="tag">SQL & Databases</span><span class="tag">LAN/WAN</span><span class="tag">Hardware Support</span><span class="tag">Data Integrity</span><span class="tag">Digital Banking</span><span class="tag">IT Asset Management</span></div>
+</div></section>
+<section id="experience"><div class="wrap">
+<h2>Experience</h2><p class="section-intro">Selected roles across IT support, ERP, digital banking, and data operations.</p>
+<div class="timeline">
+<div class="job"><div class="meta">2026 – Present</div><h3>IT Support Expert · Ayat Share Company</h3><p>Support end users and daily IT operations; troubleshoot hardware, software, Windows, printers and network connectivity; assist with ERP operations, endpoint security, preventive maintenance and IT asset inventory.</p></div>
+<div class="job"><div class="meta">2025 – 2026</div><h3>Database Associate & System Administration and Support Officer · Tibeb Design and Building PLC</h3><p>Supported ERP workflows and database-related operations, including stock transaction tracking, data entry, reporting, user guidance and data integrity checks.</p></div>
+<div class="job"><div class="meta">2025 – 2026</div><h3>Data Collector · Ethiopian Statistical Service</h3><p>Conducted field data collection, supported questionnaire completion and data validation, and contributed to field reporting and quality control.</p></div>
+<div class="job"><div class="meta">2024 – 2025</div><h3>KYC Officer · Wallet Microfinance Institution</h3><p>Verified customer identity information, maintained records and supported KYC compliance; participated in digital banking and core banking rollout support.</p></div>
+<div class="job"><div class="meta">Earlier experience</div><h3>IT, Database Training & Customer Service Roles</h3><p>Experience includes IT operations and database training at DAF-Tech Computer Engineering, customer service at Nib International Bank, and telecom field operations at Ethio-Telecom.</p></div>
+</div></div></section>
+<section id="projects"><div class="wrap">
+<h2>Selected projects & work</h2><p class="section-intro">Examples of practical work. Replace or expand these with screenshots and specific results where possible.</p>
+<div class="grid">
+<div class="card"><h3>ERP Operations Support</h3><p>Supported stock transactions, transfers, receipts, returns, reconciliation and data-quality checks to improve consistency of operational records.</p></div>
+<div class="card"><h3>Workstation Maintenance</h3><p>Supported workstation setup, OS and application installation, preventive maintenance, device inventory and troubleshooting across departments.</p></div>
+<div class="card"><h3>Network & User Support</h3><p>Investigated connectivity, printer sharing and user-access issues, documenting faults and helping restore everyday business services.</p></div>
+</div></div></section>
+<section id="education"><div class="wrap">
+<h2>Education</h2><div class="card"><h3>BSc in Electrical & Computer Engineering</h3><p>Assosa University · Communication Stream</p><p>CGPA: 3.59</p><p><strong>Thesis:</strong> Language to Text Translation Display for Dumb People Using Proteus Software.</p></div>
+</div></section>
+<section id="contact"><div class="wrap"><div class="contact">
+<h2>Let's connect</h2><p>For IT support, systems, networking, ERP, database, and digital services opportunities, feel free to contact me.</p>
+<p><strong>Email:</strong> <a href="mailto:YOUR_EMAIL@example.com" style="color:var(--teal)">YOUR_EMAIL@example.com</a><br>
+<strong>LinkedIn:</strong> <a href="https://linkedin.com/in/gizachew2121/" target="_blank" rel="noreferrer" style="color:var(--teal)">linkedin.com/in/gizachew2121/</a><br>
+<strong>Location:</strong> Addis Ababa, Ethiopia</p>
+<p class="note">Before publishing, replace YOUR_EMAIL@example.com with your real professional email. Add a CV PDF if you want a download button.</p>
+</div></div></section>
+</main>
+<footer><div class="wrap">© <span id="year">2026</span> Gizachew Tilahun Feleke · Professional IT Portfolio</div></footer>
+</body></html>
